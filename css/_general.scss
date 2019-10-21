@@ -1,0 +1,9 @@
+$primary-color: lime;
+#services {
+    i {
+        border: 5px solid darken($secondary-color, 20);
+        background-color: darken($secondary-color, 20);
+        color: darken($secondary-color, 100);
+        border-radius: 50%;
+    }
+}

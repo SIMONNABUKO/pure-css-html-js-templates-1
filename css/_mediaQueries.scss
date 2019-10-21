@@ -1,0 +1,138 @@
+$primary-color: lime;
+$secondary-color: azure;
+@mixin flexDirectionColumn {
+    flex-direction: column;
+    text-align: center;
+}
+
+@mixin mainItem {
+    background-color: #fff;
+    width: 100vw;
+    align-content: center;
+    position: relative;
+    margin-top: 10vh;
+}
+
+@mixin mainItemChild {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+}
+
+@mixin mainItemGrandChildImage {
+    width: 45vw;
+    img {
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+@mixin mainItemGrandChildText {
+    width: 45vw;
+    padding-left: 4vw;
+}
+
+// Mobile Menu mixins
+@mixin mainItemMobile {
+    background-color: #fff;
+    width: 100vw;
+    align-content: center;
+    position: relative;
+    margin-top: 10vh;
+}
+
+@mixin mainItemChildMobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+}
+
+@mixin mainItemGrandChildImageMobile {
+    width: 100vw !important;
+    img {
+        background-size: cover;
+        padding: 2%;
+    }
+}
+
+@mixin mainItemGrandChildTextMobile {
+    width: 100vw !important;
+    h3,
+    p,
+    ul {
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        #header {
+            .top-nav {
+                .toggle-menu-btn {
+                    visibility: visible !important;
+                }
+            }
+            .nav {
+                ul {
+                    background-color: $secondary-color;
+                    @include flexDirectionColumn;
+                    li {
+                        height: 5vh;
+                        border-bottom: 2px solid #fff;
+                        font-weight: 700;
+                        display: none;
+                    }
+                }
+            }
+        }
+        #about {
+            .about-items {
+                @include mainItemChildMobile;
+                .about-img {
+                    @include mainItemGrandChildImageMobile;
+                }
+                .about-text {
+                    @include mainItemGrandChildTextMobile;
+                }
+            }
+        }
+        #services {
+            .why-us {
+                .why-us-items {
+                    @include mainItemChildMobile;
+                    .why-us-img {
+                        @include mainItemGrandChildImageMobile;
+                    }
+                    .why-us-text {
+                        @include mainItemGrandChildTextMobile;
+                    }
+                }
+            }
+            .more-info1 {
+                .more-info1-items {
+                    @include mainItemChildMobile;
+                    .more-info1-img {
+                        @include mainItemGrandChildImageMobile;
+                    }
+                    .more-info1-text {
+                        @include mainItemGrandChildTextMobile;
+                    }
+                }
+            }
+            .more-info2 {
+                .more-info2-items {
+                    @include mainItemChildMobile;
+                    .more-info2-img {
+                        @include mainItemGrandChildImageMobile;
+                    }
+                    .more-info2-text {
+                        @include mainItemGrandChildTextMobile;
+                    }
+                }
+            }
+        }
+    }
+}
