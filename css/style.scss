@@ -41,25 +41,41 @@ body {
                 }
             }
         }
-        .nav {
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                li {
-                    list-style: none;
-                    a {
-                        text-decoration: none;
-                        color: $primary-color;
-                        
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .nav {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    background-color: $secondary-color;
+                    border: 10px solid $secondary-color;
+                    opacity: .8;
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            
+                        }
                     }
                 }
             }
-        }
-        .call-to-action1 {
-            align-self: center;
-            width: 100vw;
-            height: 30vh;
+            .call-to-action1 {
+                position: relative;
+                margin-top: 10vh;
+                align-self: center;
+                width: 70vw;
+                height: 30vh;
+                font-size: 7vh;
+                
+                .styleGreen{
+                    color: $primary-color;
+                }
+            }
         }
     }
     #about {

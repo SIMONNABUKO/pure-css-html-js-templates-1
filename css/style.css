@@ -2,7 +2,7 @@
   #main #header .top-nav .toggle-menu-btn {
     visibility: visible !important;
   }
-  #main #header .nav ul {
+  #main #header .navigation .nav ul {
     background-color: #fa6900;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10,11 +10,26 @@
             flex-direction: column;
     text-align: center;
   }
-  #main #header .nav ul li {
+  #main #header .navigation .nav ul li {
     height: 5vh;
     border-bottom: 2px solid #fff;
     font-weight: 700;
     display: none;
+  }
+  #main #header .navigation .call-to-action1 {
+    font-size: 7vw !important;
+  }
+  #main #header .navigation .call-to-action1 button {
+    background-color: #32cd32;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
   #main #about .about-items {
     display: -webkit-box;
@@ -141,6 +156,19 @@ h3 {
   color: #006600;
 }
 
+button {
+  background-color: lime;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 body {
   background-color: #fa6900;
   max-width: 100%;
@@ -195,7 +223,21 @@ body {
   padding: 10px;
 }
 
-#main #header .nav ul {
+#main #header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main #header .navigation .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,23 +245,33 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #fa6900;
+  border: 10px solid #fa6900;
+  opacity: .8;
 }
 
-#main #header .nav ul li {
+#main #header .navigation .nav ul li {
   list-style: none;
 }
 
-#main #header .nav ul li a {
+#main #header .navigation .nav ul li a {
   text-decoration: none;
-  color: lime;
+  color: #fff;
 }
 
-#main #header .call-to-action1 {
+#main #header .navigation .call-to-action1 {
+  position: relative;
+  margin-top: 10vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 100vw;
+  width: 70vw;
   height: 30vh;
+  font-size: 7vh;
+}
+
+#main #header .navigation .call-to-action1 .styleGreen {
+  color: lime;
 }
 
 #main #about {

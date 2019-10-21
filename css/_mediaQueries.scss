@@ -72,15 +72,32 @@ $secondary-color: #fa6900;
                     visibility: visible !important;
                 }
             }
-            .nav {
-                ul {
-                    background-color: $secondary-color;
-                    @include flexDirectionColumn;
-                    li {
-                        height: 5vh;
-                        border-bottom: 2px solid #fff;
-                        font-weight: 700;
-                        display: none;
+            .navigation {
+                .nav {
+                    ul {
+                        background-color: $secondary-color;
+                        @include flexDirectionColumn;
+                        li {
+                            height: 5vh;
+                            border-bottom: 2px solid #fff;
+                            font-weight: 700;
+                            display: none;
+                        }
+                    }
+                }
+                .call-to-action1 {
+                    font-size: 7vw !important;
+                    button {
+                        background-color: $primary-color;
+                        border: none;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;
                     }
                 }
             }
