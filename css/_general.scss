@@ -1,9 +1,34 @@
 $primary-color: lime;
 #services {
     i {
-        border: 5px solid darken($secondary-color, 20);
-        background-color: darken($secondary-color, 20);
-        color: darken($secondary-color, 100);
+        border: 5px solid darken($primary-color, 20);
+        background-color: darken($primary-color, 20);
+        color: darken($primary-color, 100);
         border-radius: 50%;
     }
+}
+
+h1 {
+    color: $secondary-color;
+}
+
+h2 {
+    color: darken($primary-color, 20);
+}
+
+#about,
+.why-us,
+.more-info1,
+.more-info2 {
+    h3 {
+        border: 2px solid darken($primary-color, 30);
+        background-color: darken($primary-color, 30);
+        color: $primary-color;
+        border-radius: 5px;
+        max-width: 80%;
+    }
+}
+
+h3 {
+    color: darken($primary-color, 30);
 }
