@@ -2,6 +2,9 @@
   #main #header .top-nav .toggle-menu-btn {
     visibility: visible !important;
   }
+  #main #header .navigation .nav {
+    display: none;
+  }
   #main #header .navigation .nav ul {
     background-color: #fa6900;
     -webkit-box-orient: vertical;
@@ -155,6 +158,10 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.show {
+  display: block !important;
 }
 
 body {

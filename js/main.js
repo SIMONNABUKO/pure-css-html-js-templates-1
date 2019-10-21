@@ -10,13 +10,17 @@ function toggleMenu() {
     if (!showMenu) {
         menuBtn.classList.add('close');
         navigationBar.classList.add('show');
-        navItems.classList.add('show');
+        navItems.forEach(item => {
+            item.classList.add('show');
+        });
         //set menu state
         showMenu = true;
     } else {
         menuBtn.classList.remove('close');
         navigationBar.classList.remove('show');
-        navItems.classList.remove('show');
+        navItems.forEach(item => {
+            item.classList.remove('show');
+        });
         //set menu state
         showMenu = false;
     }

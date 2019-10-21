@@ -74,6 +74,7 @@ $secondary-color: #fa6900;
             }
             .navigation {
                 .nav {
+                    display: none;
                     ul {
                         background-color: $secondary-color;
                         @include flexDirectionColumn;
