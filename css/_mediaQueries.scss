@@ -1,5 +1,5 @@
-$primary-color: lime;
-$secondary-color: azure;
+$primary-color: #32cd32;
+$secondary-color: pink;
 @mixin flexDirectionColumn {
     flex-direction: column;
     text-align: center;
@@ -24,8 +24,8 @@ $secondary-color: azure;
 @mixin mainItemGrandChildImage {
     width: 45vw;
     img {
-        background-size: cover;
-        width: 100%;
+        background-size: contain;
+        max-width: 100%;
     }
 }
 
@@ -54,7 +54,6 @@ $secondary-color: azure;
     width: 100vw !important;
     img {
         background-size: cover;
-        padding: 2%;
     }
 }
 
@@ -62,9 +61,7 @@ $secondary-color: azure;
     width: 100vw !important;
     h3,
     p,
-    ul {
-        padding: 2%;
-    }
+    ul {}
 }
 
 @media screen and (max-width: 700px) {
@@ -100,6 +97,13 @@ $secondary-color: azure;
             }
         }
         #services {
+            .call-to-action2 {
+                flex-direction: column;
+                .call-to-action2-text {}
+                .call-to-action2-btn {
+                    width: auto;
+                }
+            }
             .why-us {
                 .why-us-items {
                     @include mainItemChildMobile;

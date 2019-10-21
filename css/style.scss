@@ -1,7 +1,7 @@
 @import 'mediaQueries';
 @import 'general';
 body {
-    background-color: azure;
+    background-color: $secondary-color;
     max-width: 100%;
     overflow-x: hidden;
     font-size: 18px;
@@ -114,7 +114,7 @@ body {
             justify-content: space-around;
             flex-wrap: wrap;
             background: lightgray;
-            height: 30vh;
+           
             width: 100%;
             align-items: center;
             .statistic {
@@ -130,14 +130,13 @@ body {
             height: 35vh;
             display: flex;
             justify-content: space-around;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             flex-direction: column;
             .call-to-action2-text {}
             .call-to-action2-btn {
                 max-width: 20vw;
                 align-self: flex-start;
-                width: 150px;
-                height: 40px;
+                
                 background: $primary-color;
                 color: #fff;
             }
@@ -283,8 +282,10 @@ body {
             padding: 20px;
             form{
                 display: flex;
+                flex-wrap: wrap;
                 input[type="submit"]{
                     height: 20px;
+                    flex: 1 100px;
                 }
                 
             }
