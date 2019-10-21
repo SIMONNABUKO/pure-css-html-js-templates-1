@@ -114,7 +114,7 @@
 #services i {
   border: 5px solid #009900;
   background-color: #009900;
-  color: black;
+  color: #fff;
   border-radius: 50%;
 }
 
@@ -146,6 +146,8 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 #main #header {
@@ -296,6 +298,7 @@ body {
           align-items: center;
   text-align: justify;
   background: #fff;
+  border-bottom: 5px solid #009900;
 }
 
 #main #services .service-items .service i,

@@ -5,6 +5,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
+
 }
 
 #main {
@@ -87,6 +90,7 @@ body {
                 align-items: center;
                 text-align: justify;
                 background: #fff;
+                border-bottom: 5px solid darken($primary-color, 20);
                 i,
                 h3,
                 p {
